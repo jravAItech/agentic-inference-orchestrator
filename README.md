@@ -93,7 +93,7 @@ never call each other directly, so every decision is an auditable, logged edge.
 
 **Step 1 — Get the code**
 ```bash
-git clone https://github.com/YOUR_USERNAME/agentic-inference-orchestrator.git
+git clone https://github.com/jravAItech/agentic-inference-orchestrator.git
 cd agentic-inference-orchestrator
 ```
 
