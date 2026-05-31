@@ -1,0 +1,10 @@
+# Scrapes agent step metrics and (Phase 2) Triton GPU metrics.
+global:
+  scrape_interval: 5s
+scrape_configs:
+  - job_name: 'agent-orchestrator'
+    static_configs:
+      - targets: ['localhost:8001']   # app /metrics endpoint
+  - job_name: 'triton'
+    static_configs:
+      - targets: ['localhost:8002']   # Triton metrics (GPU util, queue, infer count)
